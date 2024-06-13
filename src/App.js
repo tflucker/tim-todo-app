@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+import TodoList from "./components/TodoList";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header className="App-header">Tim's Todo Application</header>
+      <TodoList />
+      <footer className="App-footer">
+        <div>
+          <span> Links:</span>
+          <br />
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/tflucker/tim-todo-app">
+            Link to project Repository
+          </a>
+          <br />
+          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/timothy-flucker-44143b43/">
+            LinkedIn Profile
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }
